@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Silver DJ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Sarabun:wght@400;700&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+<div class="site-wrap">
+  <div id="video-wrap" class="video-wrap">
+    <div id="close-video" onclick="endVideo()">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <iframe width="100%" height="99%" name="youtube embed" allow="autoplay; encrypted-media"
+            src="https://www.youtube.com/embed/YJSw3ougt9Y/?autoplay=1&mute=1">
+    </iframe>
+  </div>
+
+  <div id="nav-wrap" class="nav-wrap">
+    <nav class="nav wrap">
+      <div class="logo">
+        Silver DJ
+      </div>
+
+      <ul class="nav-list">
+        <li id="home-link" class="nav-link nav-link-active">
+          <a href="#home-section">Home</a>
+        </li>
+        <li id="about-link" class="nav-link">
+          <a href="#about-section">Chi Sono</a>
+        </li>
+        <li id="process-link" class="nav-link">
+          <a href="#process-section">Come Funziona?</a>
+        </li>
+        <li id="gallery-link" class="nav-link">
+          <a href="#gallery-section">Galleria</a>
+        </li>
+        <li id="reviews-link" class="nav-link">
+          <a href="#reviews-section">Recensioni</a>
+        </li>
+        <li id="faq-link" class="nav-link">
+          <a href="#faq-section">FAQ</a>
+        </li>
+      </ul>
+
+
+      <div class="preview-content-links-nav">
+        <a target="_blank" href="https://facebook.com">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a target="_blank" href="https://facebook.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <a target="_blank" href="https://facebook.com">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a target="_blank" href="https://facebook.com">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </div>
+    </nav>
+  </div>
+  <div id="home-section" class="preview">
+    <div class="preview-gradient">
+      <div class="preview-container wrap">
+        <div class="preview-content">
+          <h2 class="preview-title animate__animated animate__zoomInDown">Silver DJ</h2>
+          <p class="preview-text animate__animated animate__slideInUp">
+            Ciao! sono <b>Dj Silver</b>, il DJ di <b>Reggio Emilia</b> che renderà unico il tuo evento.
+            Se stai cercando un'esperienza musicale unica e coinvolgente, sei nel posto giusto
+            Contattami per rendere il tuo evento <b>indimenticabile</b>!
+          </p>
+          <div class="preview-content-links animate__animated animate__flipInX">
+            <a target="_blank" href="https://facebook.com">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a target="_blank" href="https://facebook.com">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a target="_blank" href="https://facebook.com">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a target="_blank" href="https://facebook.com">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+          <button class="preview-button animate__animated animate__backInUp"
+                  onclick="window.location.href='#about-section'">Chi Sono
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="about-section" class="about">
+    <div class="about-dec-2"></div>
+    <div class="about-dec-3"></div>
+    <div class="about-dec-4"></div>
+    <div class="about-dec"></div>
+    <div class="wrap about-wrap">
+      <div class="about-img-wrap">
+        <img class="about-img" id="about-image" src="img/preview-img.webp" alt="">
+      </div>
+
+      <div>
+        <h2 id="about-title" class="page-title">Chi Sono</h2>
+        <p id="about-text" class="about-text">
+          Ho una esperienza di oltre <b>40 anni</b> nel mondo dei dj, avendo lavorato nelle migliori discoteche
+          italiane.<br>
+          Offro servizi esclusivi per eventi importanti come <b>DJ per Matrimoni</b> e <b>DJ per Feste Private</b>.<br>
+          Servizi inclusi: <b>Clip musicali</b> di alta qualità di una vasta gamma di generi con i migliori successi
+          italiani e internazionali.
+        </p>
+        <button id="about-btn" class="preview-button none" onclick="window.location.href='/file.pdf'">Il Mio CV</button>
+      </div>
+    </div>
+  </section>
+  <section class="work">
+    <div class="wrap work-wrap">
+      <h3 id="work-title" class="page-title none">Come Funziona?</h3>
+      <p id="work-text" class="work-text none">
+        Sono un DJ di Reggio Emilia di fiducia per eventi <b>straordinari</b>.<br> Con un'<b>invidiabile</b> reputazione
+        basata su <b>successi comprovati</b> e
+        <b>testimonianze entusiastiche</b>, il mio servizio da dj garantisce un'esperienza <b>indimenticabile</b>. <br>
+        Scopri
+        il mio <b>metodo vincente</b> e guarda il <b>video</b> che svela la <b>magia</b> della mia performance.
+
+      </p>
+
+      <div onclick="startVideo()" id="work-poster" class="work-img-wrap none">
+        <i class="fa-solid fa-circle-play"></i>
+        <img src="img/work-img.webp" alt="">
+      </div>
+    </div>
+  </section>
+  <section id="process-section" class="process">
+    <div class="wrap">
+      <h4 id="process-subtitle" class="process-subtitle none">IL PROCESSO</h4>
+      <h3 id="process-title" class="page-title process-title none">Come Lavoro</h3>
+
+      <div class="process-container">
+        <div class="process-container-line"></div>
+        <div class="process-content">
+          <div class="process-item-1 process-item-bottom">
+            <div class="process-item-start">INIZIO</div>
+            <div class="process-item-bottom-dec">
+              <div class="process-bottom-dec-circe"></div>
+            </div>
+            <h5 class="process-item-title">Ottieni una chiamata Gratuita</h5>
+            <p class="process-item-text">
+              Potrai contattarmi gratuitamente per capire come rendere indimenticabile la tua festa.
+            </p>
+          </div>
+          <div class="process-item-2 process-item-top">
+            <div class="process-item-start-top">ORGANIZZAZIONE</div>
+            <div class="process-item-bottom-dec">
+              <div class="process-bottom-dec-circe"></div>
+            </div>
+            <h5 class="process-item-title">Organizziamo la tua festa</h5>
+            <p class="process-item-text">
+              Organizzeremo la tua festa decidendo il genere musicale in base al pubblico e al tipo di serata.
+            </p>
+          </div>
+          <div class="process-item-3 process-item-bottom">
+            <div class="process-item-start">SUCCESSO</div>
+            <div class="process-item-bottom-dec">
+              <div class="process-bottom-dec-circe"></div>
+            </div>
+            <h5 class="process-item-title">Rendi la tua festa indimenticabile</h5>
+            <p class="process-item-text">
+              L'unica cosa di cui dovrai preoccuparti sarà ballare.
+            </p>
+          </div>
+        </div>
+
+        <button id="connected-btn-2" class="connected-btn process-btn" onclick="window.location.href='tel:3208619431'">
+          Chiamata Gratuita
+        </button>
+      </div>
+    </div>
+  </section>
+  <section id="gallery-section" class="gallery">
+    <div class="wrap">
+      <div class="gallery-top">
+        <h3 id="gallery-title" class="page-title none">Galleria</h3>
+        <p id="gallery-subtitle" class="gallery-subtitle none">Sogni una festa indimenticabile?<br> In questa galleria
+          puoi
+          trovare solamente una piccola <br> parte di quello che vivrai dal vivo nella tua festa. <br> Il mio talento
+          musicale
+          trasformerà il tuo evento in un'esperienza straordinaria. <br>Contattami ora!</p>
+      </div>
+
+      <div class="gallery-slider-wrap">
+        <div class="gallery-slider-nav">
+          <div onclick="galleryPrevSlide()" class="gallery-button-prev">
+            <svg class="about-arrow" width="11" height="18" viewBox="0 0 11 18" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.20697 8.75766L10.757 15.3077L8.88595 17.1788L0.464844 8.75766L8.88595 0.336548L10.757 2.20761L4.20697 8.75766Z"
+                fill="#101b2b"/>
+            </svg>
+          </div>
+          <div onclick="galleryNextSlide()" class="gallery-button-next">
+            <svg class="about-arrow-right" width="11" height="18" viewBox="0 0 11 18" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.20697 8.75766L10.757 15.3077L8.88595 17.1788L0.464844 8.75766L8.88595 0.336548L10.757 2.20761L4.20697 8.75766Z"
+                fill="#101b2b"/>
+            </svg>
+          </div>
+        </div>
+        <div class="swiper swiper-gallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="gallery-slide-item">
+                <img class="gallery-slide-img" src="img/gallery-1.webp" alt="">
+
+                <div class="slide-bg">
+                  <div>
+                    <h4>Italghisa</h4>
+                    <p>
+
+                      Italghisa una famossisima discoteca presente a Reggio Emilia, dove ho avuto la possibilità di
+                      suonare.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="gallery-slide-item">
+                <img class="gallery-slide-img" src="img/gallery-2.webp" alt="">
+                <div class="slide-bg">
+                  <div>
+                    <h4>Indie Club Cervia</h4>
+                    <p>
+                      Sono stato partecipe come DJ molto recentemente per qualche serata in questa famosissima discoteca
+                      di Cervia in provincia di Ravenna.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="gallery-slide-item">
+                <img class="gallery-slide-img" src="img/gallery-3.webp" alt="">
+                <div class="slide-bg">
+                  <div>
+                    <h4>La Via Delle Spezie</h4>
+                    <p>
+                      Molto recentemente sono stato invitato a suonare alla Via Delle Spezie di Reggio Emilia.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="gallery-slide-item">
+                <img class="gallery-slide-img" src="img/gallery-4.webp" alt="">
+                <div class="slide-bg">
+                  <div>
+                    <h4>Zouk Santana</h4>
+                    <p>
+                      Ho avuto il piacere di suonare nel locale di Milano Marittima Zouk Santana.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination-wrap">
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <button id="connected-btn-3" class="connected-btn process-btn" onclick="window.location.href='tel:3208619431'">
+        Scopri il Segreto per una Festa di Successo
+      </button>
+    </div>
+  </section>
+
+  <section id="reviews-section" class="reviews">
+    <h2 id="review-title" class="page-title review-title none">Recensioni</h2>
+
+    <div class="review-wrap">
+      <div class="review-dec"></div>
+      <div id="review-line-1" class="review-line review-line-1">
+        <div>
+          <div class="comment">
+            <div class="comment-header">
+              <div>
+                <img src="img/person-1.webp" alt="">
+              </div>
+
+              <div class="comment-header-content">
+                <h3 class="comment-name">Ryan Azhari</h3>
+                <p>@azhary_an74</p>
+              </div>
+            </div>
+
+            <div class="comment-text">
+              <p>
+                DJ Silver è stato eccezionale! La sua selezione musicale è stata perfetta per la nostra festa. Ha reso
+                l'atmosfera incredibile e tutti i nostri ospiti hanno ballato fino a notte fonda. Consiglio vivamente DJ
+                Silver per qualsiasi evento.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="comment">
+            <div class="comment-header">
+
+              <div class="comment-header-content">
+                <h3 class="comment-name">Aurora Santoro</h3>
+              </div>
+            </div>
+
+            <div class="comment-text">
+              <p>
+                Abbiamo assunto DJ Silver per il nostro matrimonio e siamo rimasti estremamente soddisfatti del suo
+                servizio. È stato professionale, puntuale e ha saputo intrattenere tutti i nostri ospiti. La sua
+                capacità di leggere il pubblico e di suonare i brani giusti al momento giusto è davvero impressionante.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="comment">
+            <div class="comment-header">
+
+              <div class="comment-header-content">
+                <h3 class="comment-name">Leonardo Marchetti</h3>
+              </div>
+            </div>
+
+            <div class="comment-text">
+              <p>
+                DJ Silver ha reso la nostra serata indimenticabile! È stato molto attento alle nostre richieste musicali
+                e ha saputo creare una playlist perfetta per l'atmosfera che volevamo. Tutti i nostri amici ci hanno
+                complimentato per la scelta del DJ.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="comment">
+            <div class="comment-header">
+
+              <div class="comment-header-content">
+                <h3 class="comment-name">Valeria Rizzo</h3>
+              </div>
+            </div>
+
+            <div class="comment-text">
+              <p>
+                Non avremmo potuto chiedere di meglio dal DJ Silver. È stato molto disponibile nell'organizzare i
+                dettagli musicali del nostro evento e ha superato le nostre aspettative. La sua presenza sul palco è
+                stata coinvolgente e ha mantenuto alta l'energia per tutta la serata.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="comment">
+            <div class="comment-header">
+
+              <div class="comment-header-content">
+                <h3 class="comment-name">Davide Bianchini</h3>
+              </div>
+            </div>
+
+            <div class="comment-text">
+              <p>
+                Abbiamo organizzato una festa aziendale e lui è stato in grado di coinvolgere tutti i dipendenti con la
+                sua musica. Ha una grande varietà di generi musicali e ha saputo adattarsi alle diverse preferenze dei
+                partecipanti.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="comment">
+            <div class="comment-header">
+
+              <div class="comment-header-content">
+                <h3 class="comment-name">Serena Ferri</h3>
+              </div>
+            </div>
+
+            <div class="comment-text">
+              <p>
+                Non avremmo potuto chiedere di meglio dal DJ Silver. È stato molto disponibile nell'organizzare i
+                dettagli musicali del nostro evento e ha superato le nostre aspettative. La sua presenza sul palco è
+                stata coinvolgente e ha mantenuto alta l'energia per tutta la serata.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="comment">
+            <div class="comment-header">
+
+              <div class="comment-header-content">
+                <h3 class="comment-name">Riccardo Caruso</h3>
+              </div>
+            </div>
+
+            <div class="comment-text">
+              <p>
+                DJ Silver ha una grande passione per la musica e questo si riflette nella sua performance. Ha creato
+                un'atmosfera unica durante la nostra festa di compleanno e ha reso il momento indimenticabile.
+                Consigliamo vivamente DJ Silver per qualsiasi evento speciale.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="comment">
+            <div class="comment-header">
+
+              <div class="comment-header-content">
+                <h3 class="comment-name">Eleonora Fiore</h3>
+              </div>
+            </div>
+
+            <div class="comment-text">
+              <p>
+                Abbiamo avuto il piacere di avere DJ Silver al nostro evento di beneficenza e siamo rimasti estremamente
+                soddisfatti. La sua capacità di mixare diversi generi musicali è sorprendente e ha saputo tenere alta
+                l'energia della serata. Non vediamo l'ora di lavorare di nuovo con lui in futuro.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="comment">
+            <div class="comment-header">
+
+              <div class="comment-header-content">
+                <h3 class="comment-name">Federico Lombardi</h3>
+              </div>
+            </div>
+
+            <div class="comment-text">
+              <p>
+                DJ Silver è molto professionale e ha una vasta conoscenza musicale. È stato in grado di soddisfare tutte
+                le nostre richieste e ha saputo creare un'atmosfera perfetta per il nostro matrimonio. Tutti i nostri
+                ospiti si sono divertiti moltissimo grazie alla sua musica coinvolgente.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="comment">
+            <div class="comment-header">
+
+              <div class="comment-header-content">
+                <h3 class="comment-name">Giulia Martini</h3>
+              </div>
+            </div>
+
+            <div class="comment-text">
+              <p>
+                Siamo stati fortunati ad avere DJ Silver al nostro evento aziendale. Ha saputo creare la giusta
+                atmosfera per un mix di generi musicali diversi. È stato flessibile nelle richieste dell'ultimo minuto e
+                ha garantito che tutti si divertissero. Consigliamo vivamente DJ Silver per qualsiasi tipo di evento.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="comment">
+            <div class="comment-header">
+
+              <div class="comment-header-content">
+                <h3 class="comment-name">Marco D'Amico</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq-section" class="faq">
+    <div class="faq-wrap">
+      <div class="faq-header">
+        <h2 id="faq-title" class="page-title none">FAQ</h2>
+        <p id="faq-text" class="faq-text none">In questa sezione potrai schiarirti le idee, vedendo le domande che mi
+          vengono fatte più di frequente</p>
+      </div>
+
+
+      <div class="faq-list">
+        <div id="faq-item-1" class="faq-item faq-item-1 none">
+          <div class="faq-item-header">
+            <h4 class="faq-item-title">Quali Servizi Offri?</h4>
+
+            <div class="faq-arrow-wrap" data-id="1">
+              <div class="faq-arrow">
+                <svg class="about-arrow-right" width="11" height="18" viewBox="0 0 11 18" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.20697 8.75766L10.757 15.3077L8.88595 17.1788L0.464844 8.75766L8.88595 0.336548L10.757 2.20761L4.20697 8.75766Z"
+                    fill="white"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item-text">
+            <p>
+              Offro servizi DJ in tutta Reggio Emilia e in tutta la Emilia-Romagna, di qualsiasi genere: <br>per Feste
+              Private, Matrimoni, Compleanni ecc...
+            </p>
+          </div>
+        </div>
+
+        <div id="faq-item-2" class="faq-item faq-item-2 none">
+          <div class="faq-item-header">
+            <h4 class="faq-item-title">Che tipo di musica suoni come DJ?</h4>
+
+            <div class="faq-arrow-wrap" data-id="2">
+              <div class="faq-arrow">
+                <svg class="about-arrow-right" width="11" height="18" viewBox="0 0 11 18" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.20697 8.75766L10.757 15.3077L8.88595 17.1788L0.464844 8.75766L8.88595 0.336548L10.757 2.20761L4.20697 8.75766Z"
+                    fill="white"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item-text">
+            <p>
+              Suono una vasta gamma di generi musicali, tra cui pop, dance, hip-hop e molti altri. Mi adatto al
+              pubblico e all'atmosfera dell'evento per offrire un'esperienza musicale coinvolgente.
+            </p>
+          </div>
+        </div>
+
+        <div id="faq-item-3" class="faq-item faq-item-3 none">
+          <div class="faq-item-header">
+            <h4 class="faq-item-title">Quali attrezzature utilizzi per le tue performance da DJ?</h4>
+
+            <div class="faq-arrow-wrap" data-id="3">
+              <div class="faq-arrow">
+                <svg class="about-arrow-right" width="11" height="18" viewBox="0 0 11 18" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.20697 8.75766L10.757 15.3077L8.88595 17.1788L0.464844 8.75766L8.88595 0.336548L10.757 2.20761L4.20697 8.75766Z"
+                    fill="white"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item-text">
+            <p>
+              Utilizzo attrezzature professionali per garantire un suono di alta qualità. La mia configurazione standard
+              include lettori di ultima generazione, mixer, altoparlanti potenti e cuffie da DJ. Posso anche fornire
+              luci e effetti
+              speciali per creare un'atmosfera coinvolgente.
+            </p>
+          </div>
+        </div>
+
+        <div id="faq-item-4" class="faq-item faq-item-4 none">
+          <div class="faq-item-header">
+            <h4 class="faq-item-title">Hai esperienza nella gestione di eventi di grandi dimensioni?</h4>
+
+            <div class="faq-arrow-wrap" data-id="4">
+              <div class="faq-arrow">
+                <svg class="about-arrow-right" width="11" height="18" viewBox="0 0 11 18" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.20697 8.75766L10.757 15.3077L8.88595 17.1788L0.464844 8.75766L8.88595 0.336548L10.757 2.20761L4.20697 8.75766Z"
+                    fill="white"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item-text">
+            <p>
+              Assolutamente! Ho esperienza nella gestione di eventi di varie dimensioni, dai piccoli party privati alle
+              grandi feste e concerti. Ho lavorato con diverse organizzazioni e ho ricevuto feedback positivi per la mia
+              capacità di coinvolgere il pubblico e mantenere l'energia dell'evento ad un livello alto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="connected">
+    <div class="wrap">
+      <h2 id="connected-title" class="page-title connected-title none">Cosa ne dici...</h2>
+
+      <div class="connected-button-wrap">
+        <div class="connected-line">
+          <img src="img/preview-bottom-line.webp" alt="">
+        </div>
+        <div class="connected-button-container">
+          <button id="connected-btn" class="connected-btn none" onclick="window.location.href='tel:3208619431'">
+            Rendi La Tua Festa Un Successo?
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="footer-copy">
+      <p>
+        Copyright &#169 2023 Silver DJ. All Rights Reserved.
+      </p>
+    </div>
+  </section>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+
+</html>
