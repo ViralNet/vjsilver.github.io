@@ -72,8 +72,8 @@ ul li {
 }
 
 .nav-link-active a {
-  color: #FF4581 !important;
-  border-bottom: 1px solid #FF4581;
+  color: #AB2E56 !important;
+  border-bottom: 1px solid #AB2E56;
 }
 
 .logo {
@@ -191,7 +191,7 @@ nav {
 .preview-button {
   border: none;
   padding: 14px 52px;
-  background: #FF4581;
+  background: #AB2E56;
   font-family: 'Sarabun', sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -391,19 +391,19 @@ nav {
   font-size: 14px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #FF4581;
+  color: #D35E84;
   position: absolute;
   bottom: -50px;
   left: -38px;
 }
 
 .process-item-2 .process-bottom-dec-circe {
-  background-color: #FF4581 !important;
+  background-color: #D35E84 !important;
 }
 
 .process-item-top {
   height: 274px;
-  border-left: 1px solid #FF4581;
+  border-left: 1px solid #D35E84;
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
@@ -574,7 +574,7 @@ nav {
 
 .gallery-slide-img {
   width: 100%;
-  height: 549px;
+  height: auto;
 }
 
 .gallery-slide-img-first {
@@ -858,9 +858,8 @@ nav {
 }
 
 .connected-btn {
-  
   padding: 14px 52px;
-  background: #FF4581;
+  background: #AB2E56;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1113,6 +1112,23 @@ nav {
 
   .preview-text {
     margin-bottom: 20px;
+  }
+  .gallery-slide-item{
+    padding: 0 1rem;
+  }
+  .slide-bg{
+    width: calc(100% - 2rem);
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40%;
+  }
+  .gallery-button-next,
+  .gallery-button-prev{
+    display: none;
+  }
+  .about-text,
+  .gallery-subtitle{
+    font-size: 18px;
   }
 
   .comment {

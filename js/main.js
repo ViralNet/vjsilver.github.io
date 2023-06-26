@@ -44,7 +44,6 @@ const checkElement = (element, link) => {
   const  offset   = elemRect.top - bodyRect.top;
 
   if (window.scrollY > offset && window.scrollY < offset + element.clientHeight) {
-    console.log("add")
     link.classList.add("nav-link-active")
   }
 }
@@ -225,17 +224,19 @@ const animate = () => {
   }
 }
 
-const swiperGallery = new Swiper('.swiper-gallery', {
+const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
+  loop: true,
   slidesPerView: 1,
   spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination"
+  navigation: {
+      nextEl: '.gallery-button-next',
+      prevEl: '.gallery-button-prev',
   },
   breakpoints: {
     // mobile + tablet - 320-990
-    550: {
+    650: {
       slidesPerView: 2
     },
     // desktop >= 991
@@ -264,20 +265,15 @@ function inView(element) {
   return false;
 }
 
-const galleryNextSlide = () => {
-  swiperGallery.slideNext()
-}
-
-const galleryPrevSlide = () => {
-  swiperGallery.slidePrev()
-}
 
 const startVideo = () => {
   const videoWrap = document.getElementById("video-wrap")
   const video = document.getElementById("video")
 
   videoWrap.classList.add("video-wrap-active")
-  video.play()
+  var player = document.getElementById("vid_id");
+  var data = { method: "play" };
+  player.contentWindow.postMessage(JSON.stringify(data), "*");
 }
 
 const endVideo = () => {
@@ -285,7 +281,9 @@ const endVideo = () => {
   const video = document.getElementById("video")
 
   videoWrap.classList.remove("video-wrap-active")
-  video.stop()
+  var player = document.getElementById("vid_id");
+  var data = { method: "pause" };
+  player.contentWindow.postMessage(JSON.stringify(data), "*");
 }
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
