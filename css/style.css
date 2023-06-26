@@ -15,6 +15,22 @@ body {
   width: 100vw !important;
 }
 
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: .6rem;
+  background-color: #27282a;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3b3c40;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4e5155;
+}
+
 .site-wrap {
   position: relative;
   width: 100%;
@@ -45,9 +61,7 @@ body {
   opacity: 0;
 }
 
-body::-webkit-scrollbar {
-  display: none; /* for Chrome, Safari, and Opera */
-}
+
 
 ul li {
   list-style: none;
@@ -130,7 +144,7 @@ nav {
   width: 100vw;
   position: relative;
   background: url(../img/preview-bg.webp) no-repeat center center ;
-  -webkit-background-size: cover;
+
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
