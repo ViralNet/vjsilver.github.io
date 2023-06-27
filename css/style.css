@@ -8,8 +8,10 @@ body {
   background-color: #04121c;
   color: #fff;
   overflow-x: hidden !important;
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* for Firefox */
   overflow-y: scroll;
   font-family: 'Sarabun', sans-serif;
   width: 100vw !important;
@@ -41,7 +43,7 @@ body {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0,0,0,1);
+  background-color: rgba(0, 0, 0, 1);
   left: 0;
   right: 0;
   z-index: 350;
@@ -104,7 +106,7 @@ ul li {
 }
 
 .nav-wrap-active {
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 nav {
@@ -143,7 +145,7 @@ nav {
   height: 100vh;
   width: 100vw;
   position: relative;
-  background: url(../img/preview-bg.webp) no-repeat center center ;
+  background: url(../img/preview-bg.webp) no-repeat center center;
 
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -153,7 +155,7 @@ nav {
 .preview-gradient {
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 
@@ -281,7 +283,7 @@ nav {
 
 /* Process */
 
-.page-title{
+.page-title {
   font-family: 'Sarabun', sans-serif;
   font-weight: 800;
   font-size: 48px;
@@ -523,11 +525,11 @@ nav {
 }
 
 .about-wrap {
-  background-color: rgba(255,255,255,0.01);
+  background-color: rgba(255, 255, 255, 0.01);
   padding: 42px 92px;
   margin: 0 auto;
   position: relative;
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(5px);
   border-radius: 12px;
   display: grid;
@@ -578,7 +580,7 @@ nav {
 }
 
 .swiper-pagination-wrap {
- transform: translateY(30px) ;
+  transform: translateY(30px);
   height: 40px;
 }
 
@@ -613,9 +615,10 @@ nav {
   overflow: hidden;
 }
 
-.slide-bg > div {
+.slide-bg>div {
   padding: 20px;
 }
+
 .slide-bg p {
   font-weight: 400;
   font-size: 14px;
@@ -665,7 +668,8 @@ nav {
   align-items: center;
 }
 
-.gallery-button-prev, .gallery-button-next {
+.gallery-button-prev,
+.gallery-button-next {
   background: #FFFFFF;
   width: 50px;
   height: 50px;
@@ -684,7 +688,7 @@ nav {
 /* Review */
 .reviews {
   padding: 44px 0;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   position: relative;
 }
@@ -826,7 +830,7 @@ nav {
   transition: 0.3s;
 }
 
-.faq-item-active .faq-item-text  {
+.faq-item-active .faq-item-text {
   margin-top: 10px !important;
   max-height: 1000px !important;
 }
@@ -905,7 +909,7 @@ nav {
 
 .footer {
   padding: 10px 0 33px 0;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   position: relative;
   overflow: hidden;
 }
@@ -965,7 +969,7 @@ nav {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255,255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
   font-size: 13px;
   text-decoration: none;
@@ -1058,7 +1062,7 @@ nav {
     row-gap: 50px;
   }
 
-  .footer-wrap > div {
+  .footer-wrap>div {
     text-align: center;
   }
 
@@ -1098,12 +1102,13 @@ nav {
     left: -18px;
   }
 
-  .process-item-bottom, .process-item-top {
+  .process-item-bottom,
+  .process-item-top {
     padding: 40px 20px;
   }
 
   .about-wrap {
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 30px;
     margin: 0 auto;
     position: relative;
@@ -1127,21 +1132,25 @@ nav {
   .preview-text {
     margin-bottom: 20px;
   }
-  .gallery-slide-item{
+
+  .gallery-slide-item {
     padding: 0 1rem;
   }
-  .slide-bg{
+
+  .slide-bg {
     width: calc(100% - 2rem);
     left: 50%;
     transform: translateX(-50%);
     height: 40%;
   }
+
   .gallery-button-next,
-  .gallery-button-prev{
+  .gallery-button-prev {
     display: none;
   }
+
   .about-text,
-  .gallery-subtitle{
+  .gallery-subtitle {
     font-size: 18px;
   }
 
